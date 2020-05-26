@@ -1,0 +1,57 @@
+--Rubix1
+--Azure2
+db.dropDatabase()
+use trivia
+db.questions.drop()
+db.users.drop()
+db.createCollection("questions")
+db.createCollection("users")
+
+db.questions.insert([{
+        "number": 1,
+        "question":"What is the smallest bone in the human body?",
+        "answer": "stapes",
+        "createdBy": "Anusha"  
+    },{
+        "number": 2,
+        "question":"Who is the President of USA?",
+        "answer": "donald trump",
+        "createdBy": "Anusha"  
+    },{
+         "number": 3,
+        "question":"What is a duel between three people called?",
+        "answer": "truel",
+        "createdBy": "Anusha"  
+    },{
+          "number": 4,
+        "question":"What is the loudest animal on Earth?",
+        "answer": "sperm whale",
+        "createdBy": "Anusha"  
+    },{
+         "number": 5,
+        "question":"Which country has the oldest continuously used national flag?",
+        "answer": "denmark",
+        "createdBy": "Anusha"  
+    },{
+         "number": 6,
+        "question":"Which state produces nearly half of America's rice?",
+        "answer": "arkansas",
+        "createdBy":"Anusha"  
+
+}]);
+
+db.users.insert([{
+          
+      "username": "anusha",   
+      "salt": "7d9088bfdf46770c37ae40b52b6792a9",
+       "hash": "a5494cfba25611597a196494dbc04233e98b2ec6dd959efa70898e4fcdc7fdcb8d4091e961927574b32c9c7814add1fdff4478a09e8c56eb779d50450aabd73b",
+      "score": 100
+},{
+     
+      "username": "sampath",      
+      "salt":"d74acdfc8aa84dbcd09262983f570ee1",
+       "hash":"e8ae5f9364c0eebe3d22411e782ffd4ff99f03cbf582ab40e7a3d8ea6a625544591bcd93746b5eee7e1c8138070f61a20c307bb581d94aec59e47bdc9bfc4b3a",
+        "score": 150
+     
+}]);
+
