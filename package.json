@@ -1,0 +1,27 @@
+{
+  "name": "hw2",
+  "version": "1.0.0",
+  "description": "hw2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anusha vudathu",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.4",
+    "crypto": "^1.0.1",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "express-validator": "^6.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-simple": "^0.5.6",
+    "mongoose": "^5.7.12",
+    "nodemon": "^1.19.4",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0"
+  }
+}

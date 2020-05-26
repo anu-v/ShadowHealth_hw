@@ -1,0 +1,14 @@
+     <header>
+        <a href="/index"><img src='/assets/images/download.jpg' width="82" height=86 alt="Logo"></a>
+        <nav class="top-nav">
+
+          <div>
+                      <% if(user){%><a href="/newQuestion">Add a new question</a><%} %>
+                      <% if(user){%><a href="/scoreDashboard">View scores</a><%} %>
+                       <% if(user){%><a href="/signout">Sign out</a><%} %>
+                    </div>
+                 <div>
+                      <% if(user){%><span>Welcome <%=user.username%> !!!!! <%} %></span>
+                    </div>
+        </nav>
+    </header>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ektara-MyConnections</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="savedConnections_body">
+  <% include partials/header.ejs %>
+   <% include partials/nav.ejs %>
+    <div class="savedConnections_tble">
+      <p><%= alert %></p>
+        <table class="savedConnections_table">
+            <tr>
+                <th>UserName</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+            <% for(var i=0; i< data.length ;i++) { %>
+            <tr>
+                <td><%= data[i].username %></td>
+                <td><%= data[i].score %></td>           
+
+          </tr>
+          <% } %>
+        </tr>
+          </table>
+    </div>
+    <% include partials/footer.ejs %>
+</body>
+</html>

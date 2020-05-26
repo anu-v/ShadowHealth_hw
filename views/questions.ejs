@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ektara-connections</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="connections_body">
+    <% include partials/header.ejs %>
+    <% include partials/nav.ejs %>
+  <div class="connections_content">
+    <p><%=alert%></p>
+  <% for(var i=0;i< data.length; i++){%>
+    <ul>
+    <li><a href="/question?questionID=<%= data[i].number%>&alert="><%=  data[i].question %></a></li>
+    </ul>
+
+ <% }; %>
+
+
+ </div>
+<% include partials/footer.ejs %>
+
+</body>
+
+</html>

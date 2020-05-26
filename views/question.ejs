@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ektara-new connections</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="connections_body">
+    <% include partials/header.ejs %>
+    <% include partials/nav.ejs %>
+    <section>
+
+        <form id="connection-form" method="POST" action="question">
+            <p><%=alert%></p>
+
+            <input type="hidden" id="questionID" name="questionID" value=<%=data[0].number%>>
+            <p>Question : <%= data[0].question %></p>
+            <p><label for="answer"><span>name: </span></label><input type="text" id="answer" name="answer" placeholder="answer"></p>
+            <p> <button type="submit">Answer Question</button> </p>             
+               
+        </form>
+    </section>
+
+
+    <% include partials/footer.ejs %>
+</body>
+
+</html>
