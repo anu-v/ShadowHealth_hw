@@ -9,7 +9,7 @@
   "author": "anusha vudathu",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^4.0.1",
+    "bcrypt": "^5.0.0",
     "connect-mongo": "^3.2.0",
     "cookie-parser": "^1.4.4",
     "crypto": "^1.0.1",
